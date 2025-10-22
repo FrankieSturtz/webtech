@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Positioning Lab</title>
+  <title>Float 2</title>
   <style type="text/css">
     /* ---------------Box Sizing----------------- */
     html {
@@ -28,24 +28,57 @@
       background-color: #FFF;
       border: 1px solid #c0c0c0;
       width: 800px;
+      height:225px;
       margin-right: auto;
       margin-left: auto;
       text-shadow: 2px 2px #000;
     }
     #navy {
       background-color: #001f3f;
+      width:175px;
+      height:140px;
+      float:left;
+      position:relative;
+      bottom:-20px;
+      left:12.5px;
+
     }
     #teal {
       background-color: #39CCCC;
+      width:175px;
+      height:140px;
+      float:left;
+      position:relative;
+      bottom:-20px;
+      left:35px;
     }
     #blue {
       background-color: #0074D9;
+      width:175px;
+      height:140px;
+      float:left;
+      position:relative;
+      bottom:-20px;
+      left:60px;
     }
     #aqua {
       background-color: #7FDBFF;
+      width:175px;
+      height:140px;
+      float:right;
+      position:relative;
+      bottom:-20px;
+      right:10px;
     }
     #footer {
       background-color: #666;
+      width:775px;
+      position:absolute;
+      bottom:54%;
+      right:23%;
+    
+      
+  
     }
     h1 {
       color: #000;
@@ -55,7 +88,7 @@
   </style>
 </head>
 <body>
-  <h1>Exercise</h1>
+  <h1>Float 2</h1>
   <section id="wrapper">
     <div id="navy">Navy</div>
     <div id="teal">Teal</div>
