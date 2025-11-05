@@ -88,7 +88,7 @@ header.primary nav ul{
   flex-direction:row;
   justify-content:space-around;
   max-width:960px;
-  margin: 15px auto 5px;
+  margin: 20px auto 5px;
 }
 header.primary nav li{
   list-style-type:none;
@@ -108,6 +108,7 @@ header.primary nav a:hover {
 #intro h2{
   color:#FFC300;
   border-bottom: 1px dotted #d4c7c7;
+  text-align: center;
 }
 #content{
   display:flex;
@@ -126,6 +127,8 @@ figure{margin:0}
 #content time, figcaption{
   text-transform:uppercase;
   font-size:.8rem;
+  text-align: right;
+  color:#FFC300
 }
 #content a{
   color:#FFC300;
@@ -177,7 +180,12 @@ td{
   padding:20px 0;
   
 }
-#practice ol{list-style-type:upper-roman;}
+#practice ol{list-style-type:upper-roman;
+color:darkblue
+}
+#practice ul{
+  color:darkblue
+}
 #practice ul ul{
   color:blue;
 }
@@ -186,9 +194,11 @@ td{
 }
 #practice dt{
   font-weight:700;
+  color:darkblue;
 }
 #practice dd{
   margin:0;
+  color:deepskyblue;
 }
 dd +dt{
   margin-top:20px;
@@ -201,14 +211,14 @@ dd +dt{
   margin:40px 80px;
   border-radius:30px 0;
   background-color: #6A0DAD;
-  color:#fff;
-  text-shadow:1px 1px #FFC300;
+  color:#000000;
+  text-shadow:.5px .5px #d3a203;
 }
 #practice blockquote cite{
   display:block;
   font-size:.6rem;
   text-align: right;
-  margin-top: 15px;
+  margin-top: 13.5px;
 }
 
 
@@ -223,6 +233,7 @@ aside .container{
   flex-direction:row;
   justify-content:center;
   gap:45px;
+  text-align: center;
 }
 aside .container a{
   color:#ffffff;
@@ -239,7 +250,7 @@ article.widget footer{
 #colophon{
   background-color:#6A0DAD;
   padding:3.5px;
-  color:#ffffff;
+  color:#000000;
   text-align: center;
   text-shadow:1px 1px #000000 ;
   
