@@ -64,5 +64,7 @@ header.primary {
 }
 header.primary::before {
     content:"";
-    background-image: 
+    background-image: ;
+    position: absolute;
+    
 }
