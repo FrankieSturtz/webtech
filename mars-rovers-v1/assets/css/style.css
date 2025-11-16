@@ -1,0 +1,68 @@
+/* --------Box Sizing---------- */
+html{
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* -------- Uitlity Styles ---------- */
+
+.container {
+    width: 80vw;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.img-right {
+    float:right;
+    margin: 10px 0 10px 20px;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    max-width: 33%;
+}
+
+.img-left {
+    float:left;
+    margin: 10px 0 10px 20px;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    max-width: 33%;
+}
+
+.img-center {
+    display:block;
+    margin: 20px auto;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    max-width: 33%;
+}
+
+/* -------- Responsive Images ---------- */
+img {
+    max-width: 100%;
+    height:auto;
+}
+
+/* -------- Global Styles ---------- */
+
+body{
+    font-family: "Public Sans";
+    margin:0;
+}
+/* -------- Header ---------- */
+
+header.primary {
+    background-color: black;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px #000000;
+    padding: 5em 2em;
+    position:relative;
+}
+header.primary::before {
+    content:"";
+    background-image: 
+}
