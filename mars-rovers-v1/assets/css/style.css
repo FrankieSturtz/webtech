@@ -186,4 +186,5 @@ section#articles h2 {
 #articles.img {
     max-width:100%;
     height:auto;
+    padding:10px;
 }
