@@ -49,7 +49,9 @@ img {
 /* -------- Global Styles ---------- */
 
 body{
-    font-family: "Public Sans";
+    font-family: "Public Sans" sans-serif;
+    font-family: "Inter" sans-serif;
+    font-family: "DM Mono" monospace;
     margin:0;
     display:flex;
     flex-direction: column;
@@ -129,6 +131,9 @@ header.primary nav a:visited {
 /* -------- Content ---------- */
 section#content {
     padding:2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 section#content h2 {
     font-family: "Inter" monospace;
@@ -140,12 +145,32 @@ section#content h2 {
     padding: 4px;
     
 }
+section#content h3 {
+    color: rgb(145, 66, 33);
+    font-size: 1.4em;
+    padding:2px;
+    text-transform: uppercase;
+    
+}
 section#content p{
-    font-family: "Inter" sans-serif;
+    font-family: "Public Sans" sans-serif;
     font-size: 1.2em;
     padding:3px;
     
 }
+#img1{
+    float:right;
+    max-width: 33%;
+    margin-right: 10px;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+
+}
+
+
+
+
+
 /* -------- Articles ---------- */
 section#articles {
     color: #000000;
@@ -157,7 +182,7 @@ section#articles .container {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-bottom: 1px solid gray;
+    
     padding: 0 0 3em 0;
     
 
@@ -198,6 +223,7 @@ section#articles h2 {
 }
 #articles article.post h3{
     font-size: 3em;
+    font-family: "DM Mono"monospace;
     text-transform: uppercase;
     color:rgb(145, 66, 33) ;
     text-align: center;
@@ -264,6 +290,12 @@ footer h6 a:visited {
     color: #d5d4d4;
     opacity: 1;
 } 
+footer p{
+    font-size: 1.2em;
+    color: #d5d4d4;
+    text-align: center;
+    text-transform: uppercase;
+}
 
 
 
