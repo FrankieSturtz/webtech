@@ -1,0 +1,322 @@
+/* --------Box Sizing---------- */
+html{
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* -------- Uitlity Styles ---------- */
+
+.container {
+    width: 80vw;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.img-right {
+    float:right;
+    margin: 10px 0 10px 20px;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    max-width: 33%;
+}
+
+.img-left {
+    float:left;
+    margin: 10px 0 10px 20px;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    max-width: 33%;
+}
+
+.img-center {
+    display:block;
+    margin: 20px auto;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    max-width: 33%;
+}
+
+/* -------- Responsive Images ---------- */
+img {
+    max-width: 100%;
+    height:auto;
+}
+
+/* -------- Global Styles ---------- */
+
+body{
+    font-family: "Public Sans" sans-serif;
+    font-family: "Inter" sans-serif;
+    font-family: "DM Mono" monospace;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+}
+/* -------- Header ---------- */
+
+header.primary {
+    background-color: black;
+    opacity: 1;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px #000000;
+    padding: .5em .5em;
+    position:relative;
+}
+header.primary::before {
+    content:"";
+    background-image: url(../css/img/marsheader.webp);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset:0; 
+    opacity: 0.2;
+    
+}
+header.primary h1{
+    font-size: 4em;
+    margin: 20px 0;
+    position: relative;
+    
+}
+header.primary h1 a {
+    color:black;
+    background-image: url(../css/img/\nasalogo2.webp);
+    display: block;
+    width: 380px;
+    height: 230px;
+    margin: 0 auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+header.primary h2 {
+    font-family:"Inter", monospace;
+    font-size: 2.0em;
+    color:#d5d4d4;
+    margin: 10px auto 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+header.primary nav ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:0;
+    max-width: 800px;
+    margin: 20px auto;
+}
+header.primary nav li{
+    list-style-type: none;
+    padding:0;
+    width:15%;
+}
+header.primary nav a:link,
+header.primary nav a:visited {
+    color:white;
+    text-decoration: none;
+    background-color:rgb(116, 78, 41);
+    padding: 5px 15px;
+    border-radius: 15px; 
+    transition: 0.3;
+    display: block;
+    text-transform: uppercase;
+}
+
+/* -------- Content ---------- */
+section#content {
+    padding:2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section#content h2 {
+    font-family: "Inter" monospace;
+    font-weight: 500px;
+    color: rgb(145, 66, 33);
+    text-align:center;
+    inset:0;
+    font-size: 2.8em;
+    padding: 4px;
+    
+}
+section#content h3 {
+    color: rgb(145, 66, 33);
+    font-size: 1.4em;
+    padding:2px;
+    text-transform: uppercase;
+    
+}
+section#content p{
+    font-family: "Public Sans" sans-serif;
+    font-size: 1.2em;
+    padding:3px;
+    
+}
+#img1{
+    float:right;
+    max-width: 33%;
+    margin-right: 10px;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+
+}
+
+
+
+
+
+/* -------- Articles ---------- */
+section#articles {
+    color: #000000;
+    background-color: black;
+    background-image: url(../css/img/space.webp);
+}
+section#articles .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 0 3em 0;
+    
+
+}
+section#articles h2,
+#content h2 {
+    flex: 0 0 100%;
+    color:rgb(145, 66, 33) ;
+    text-align: center;
+    font-family: "Inset" monospace;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+section#articles h2 {
+    color:rgb(145, 66, 33);
+    text-shadow: 1px 1px #000000;
+}
+#articles article.post {
+    width: 22%;
+    box-shadow: 0px 6px black;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.1em;
+    border-radius: 8px;
+    background: #d5d4d4;
+    
+    
+}
+#articles article.post h2 {
+    font-size: 9.2em;
+    text-shadow: none;
+    
+    
+}
+#articles article.post:hover {
+    box-shadow: 0px 5px 12px  ;
+
+}
+#articles article.post h3{
+    font-size: 3em;
+    font-family: "DM Mono"monospace;
+    text-transform: uppercase;
+    color:rgb(145, 66, 33) ;
+    text-align: center;
+}
+#articles article.post img {
+    max-width:150%;
+    max-height:150%;
+    padding:5px;
+    display: block;
+    margin-left: -20px;
+    margin-right: auto;
+    border-radius: 20px;
+}
+#articles article.post figcaption{
+    text-transform: uppercase;
+    color: gray;
+    font-size: .04em;
+    padding: 1px;
+    text-align: left;
+    margin: auto;
+}
+/* -------- Hero ---------- */
+
+#hero {
+    padding: 4em 0;
+    text-align: center;
+    margin: auto;
+}
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: rgb(4, 57, 99);
+}
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:black;
+}
+
+
+/* -------- Aside ---------- */
+
+aside {
+    opacity: 1;
+    background-image: url(../css/img/space.webp);
+    color:#d5d4d4;
+    text-shadow: 1px 1px #000000;
+    padding: 2em 2em;
+    position:relative;
+    font-size: 1.2em;
+}
+aside h2{
+    color:rgb(145, 66, 33);
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+
+}
+
+/* -------- Footer ---------- */
+
+footer {
+    background-color:rgb(145, 66, 33);
+
+
+}
+footer h6{
+    padding: 5px;
+    
+    color:#d5d4d4;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+footer h6 a:link,
+footer h6 a:visited {
+    color: #d5d4d4;
+    opacity: 1;
+} 
+footer p{
+    font-size: 1.2em;
+    color: #d5d4d4;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
