@@ -198,20 +198,21 @@ section#articles h2,
 section#articles h2 {
     color:rgb(145, 66, 33);
     text-shadow: 1px 1px #000000;
+    
 }
 #articles article.post {
     width: 22%;
     box-shadow: 0px 6px black;
     padding: 10px;
     transition: 0.3s;
-    font-size: 0.1em;
+    font-size: .15em;
     border-radius: 8px;
     background: #d5d4d4;
     
     
 }
 #articles article.post h2 {
-    font-size: 9.2em;
+    font-size: 6em;
     text-shadow: none;
     
     
@@ -221,11 +222,16 @@ section#articles h2 {
 
 }
 #articles article.post h3{
-    font-size: 3em;
+    font-size: 4.2em;
     font-family: "DM Mono"monospace;
     text-transform: uppercase;
     color:rgb(145, 66, 33) ;
     text-align: center;
+}
+#articles article.post p{
+    font-size: 5em;
+    font-family: "DM Mono"monospace;
+    
 }
 #articles article.post img {
     max-width:150%;
