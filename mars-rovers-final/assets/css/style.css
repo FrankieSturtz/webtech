@@ -166,8 +166,20 @@ section#content p{
     padding: 5px;
 
 }
-
-
+#img2{
+    float:right;
+    max-width: 33%;
+    margin-right: 10px;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+}
+#img3{
+    float:right;
+    max-width: 33%;
+    margin-right: 10px;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+}
 
 
 
@@ -284,7 +296,8 @@ aside {
     text-shadow: 1px 1px #000000;
     padding: 2em 2em;
     position:relative;
-    font-size: 1.2em;
+    text-align: center;
+    font-size: 1.65em;
 }
 aside h2{
     color:rgb(145, 66, 33);
