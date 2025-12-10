@@ -221,7 +221,7 @@ section#articles h2 {
 
 }
 #articles article.post h3{
-    font-size: 3em;
+    font-size: 3.1em;
     font-family: "DM Mono"monospace;
     text-transform: uppercase;
     color:rgb(145, 66, 33) ;
@@ -291,7 +291,7 @@ footer h6 a:visited {
 } 
 footer p{
     font-size: 1.2em;
-    color: #d5d4d4;
+    color: #cdcbcb;
     text-align: center;
     text-transform: uppercase;
 }
